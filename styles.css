@@ -16,8 +16,9 @@ html {
 }
 body {
   background: #fff;
-  color: #292929;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #8963d2;
+  font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+  font-weight: normal;
   font-size: 1.8rem;
   margin: 0;
 }
@@ -26,25 +27,15 @@ header {
   text-align: center;
 }
 
-h1,
-h2 {
-  font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
-}
-
 h1 {
-  color: #8963d2;
   font-weight: bold;
   font-size: 7.2rem;
-  line-height: 90%;
   margin-bottom: 3rem;
 }
-h1 a:link,
-h1 a:visited {
-  color: #8963d2;
-  display: block;
-}
-h1 a:hover,
-h1 a:active {
+header a:link,
+header a:visited,
+header a:hover,
+header a:active {
   color: #8963d2;
 }
 
@@ -55,13 +46,10 @@ h2 {
   margin-bottom: 2rem;
 }
 
-#container {
+main {
   margin: 3rem auto;
   padding: 0 1rem;
   max-width: 87.5rem;
-}
-main {
-  margin-bottom: 8rem;
 }
 
 footer {
@@ -70,16 +58,13 @@ footer {
   margin-top: 3rem;
 }
 
-a {
-  outline: none;
-  text-decoration: none;
-}
-
 svg {
   fill: currentColor;
 }
 
 .box {
+  outline: none;
+  text-decoration: none;
   display: table;
   width: 100%;
   height: 20rem;
@@ -102,4 +87,47 @@ svg {
   font-weight: bold;
   letter-spacing: 0.3rem;
   padding: 1rem;
+}
+
+.box:hover .title {
+  background: rgba(0, 0, 0, 0.25);
+  background: -moz-radial-gradient(
+    center,
+    circle cover,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(0, 0, 0, 0.25)),
+    color-stop(100%, rgba(0, 0, 0, 0.75))
+  );
+  background: -webkit-radial-gradient(
+    center,
+    circle cover,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    circle cover,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    circle cover,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  background: radial-gradient(
+    center,
+    circle cover,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
 }
