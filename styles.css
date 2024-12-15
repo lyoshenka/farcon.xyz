@@ -16,10 +16,10 @@ html {
 }
 body {
   background: #fff;
-  color: #8963d2;
+  color: #444;
   font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
   font-weight: normal;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ header a:active {
 h2 {
   color: #a7a7a7;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   margin-bottom: 2rem;
 }
 
